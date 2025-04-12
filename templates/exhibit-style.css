@@ -1,0 +1,282 @@
+/* 
+Exhibit Stylesheet for Lighthouse. Only for the archive master page, not the individual entries.
+Though the page is named Archive, its templates are named 'exhibit' due to WordPress restrictions.
+*/
+
+:root{ /** base light style **/
+    --scrollbar-color: #285283;
+    --text-color: #3a3c40;
+    --header-background: #285283;
+    --header-color: #c2cdcd;
+    --sub-menu-background: #CBE5F6;
+    --sub-menu-border: #00000026;
+    --sub-menu-text: #285283;
+    --main-background: #CBE5F6;
+    --exhibit-button-background: #e6c66f;
+    --exhibit-button-color: #534315;
+    --exhibit-button-background-hover: #285283;
+    --footer-background: #e6c66f;
+    --footer-text-color: #3a3c40;
+    --type-background: #3f6287;
+    --main-border: url('images/base-border.png');
+    --search-background: #e2f0f7;
+    --search-border: #5276a0;
+    --header-exhibit-color: #285283;
+    --header-exhibit-hover: #CBE5F6;
+    --details-exhibit-background: #d0cfce;
+    --details-exhibit: #39282e;
+    --submit-background-hover: #e6c66f;
+    --submit-color-hover: #285283;
+    --darkmode-icon-default: url('images/lh-dark.png');
+    --darkmode-icon-gold: url('images/lh-light.png');
+    --tag-hover: #e6c66f;
+    --nav-button-link: #c2cdcd;
+    --nav-button-background: #5075a2;
+    --nav-menu-background: #285283;
+}
+
+[data-theme="dark"]{
+    --header-exhibit-color: #9bc2d8;
+    --details-exhibit: #d0cfce;
+    --details-exhibit-background: #39282e;
+    --search-background: #202b3c;
+    --search-border: #8cb3c6;
+    --submit-background-hover: #345e73;
+    --submit-color-hover: #c2cdcd;
+    --header-exhibit-hover: #c4d5df;
+    --tag-hover: #3f6287;
+}
+
+main{
+    padding-bottom: 2.5em;
+}
+
+#exhibit{
+    width: 70%;
+    margin: -2em auto 5em;
+}
+
+h1{
+    font: normal 4em 'Girassol', serif !important;
+    font-weight: 700 !important;
+    margin: 0 auto;    
+    padding: 1em 0 0.5em!important;
+    color: var(--header-exhibit-color);
+    font-weight: normal!important;
+    text-transform: uppercase;
+    letter-spacing: 5px
+}
+
+h1:before, h1:after{
+    content: ' - ';
+}
+
+h2{
+    font: italic 2.5em 'Cormorant Garamond', serif !important;
+    color: var(--header-exhibit-color);
+    padding-bottom: 0.5em;
+    text-align: left!important;
+    padding-left: 1.5em ;
+    text-indent: -1.5em;
+    letter-spacing: 0!important;
+    padding-top: 2.5em;
+}
+
+h2 a:link, h2 a:visited{
+    text-decoration: none!important;
+}  
+
+h2 a:hover, h2 a:active{
+    color: inherit;
+    text-decoration: line-through wavy!important;
+    text-decoration-color: var(--header-exhibit-hover)!important;
+    text-decoration-thickness: 3px!important;
+}  
+
+h3{
+    font: normal 1.4em 'Cormorant Garamond', serif !important;
+    padding: 0.5em 0 0.5em 2.8em!important;
+    display: flex;
+  align-items: flex-start;
+}
+
+h4{
+    padding-bottom: 1em;
+}
+
+h4{
+    font: normal 1.5em 'Cormorant Garamond', serif !important;
+}
+
+details{
+    font: normal 1.15em 'Playfair', serif !important;
+    padding-left: 1.9em;
+    background: var(--details-exhibit-background);
+    color: var(--details-exhibit);
+    margin-bottom: 5em;
+}
+
+details p:nth-child(2){
+    padding-top: 1.5em;
+}
+
+details p{
+    padding: 0.5em 1em 0.5em 0;
+}
+
+details p:last-child{
+    padding-bottom: 1.5em;
+}
+
+summary{
+    margin-left: -1.5em;
+    padding-bottom: 1em;
+    font: bold 1.3em 'Cormorant Garamond', serif !important;
+    background-color: var(--main-background);
+}
+
+#entry{
+    margin: 0 auto;
+    font-size: 1em!important;
+    padding: 0em!important;
+}
+
+#page #entry {
+    width: 50% !important;
+}
+
+date{
+    text-align: center;
+    font-style: italic;
+    display: block;
+}
+
+main a:link, main a:visited{
+    text-decoration: underline;
+}
+
+main a:hover, main a:active{
+    text-decoration: none;
+}
+
+.type{
+    text-transform: uppercase;
+    font: normal 0.75em 'Spectral', serif !important;
+    letter-spacing: -1px;
+    display: inline-block;
+}
+
+.type a, .tag a{
+    display: inline-block;
+    padding: 0em 0.5em;
+}
+
+.type a:link, .type a:visited{
+    background: var(--type-background);
+    color: var(--header-color);
+    text-decoration: none;
+    min-width: 10em;
+
+}
+
+.type a:hover, .type a:active{
+    color: var(--header-exhibit-color);
+    background: none;
+}
+
+.tag{
+    display: inline-block;
+    min-width: 9em;
+    padding: 0 1em;
+    font: italic 0.94em 'Cormorant Garamond', serif;
+    text-align: center;
+}
+
+.tag a:link, .tag a:visited{
+    color: var(--header-exhibit-color);
+    text-decoration: none;
+}
+
+.tag a:hover, .tag a:active{
+    background: var(--tag-hover);
+}
+
+@media only screen and (max-width: 1020px) and (min-width: 768px) {
+
+    html {
+        -webkit-text-size-adjust: 100%;
+        }
+
+    #exhibit {
+            width: 90%;
+    }
+
+}
+
+/** smaller tablets and mobile styling **/
+    
+@media only screen and (max-width: 767px) and (min-width: 0px) {
+
+    #exhibit{
+        width: 95%;
+    }
+
+    #page #entry{
+        width: 95%!important;
+    }
+    
+    h1{
+        font-size: 300%!important;
+        padding: 1em 0 0!important;
+    }
+
+    #exhibit h2:nth-child(3){
+        padding-top: 3em;
+    }
+
+    h2{
+        padding-top: 2em;
+        font-size: 170%!important;
+        padding-left: 0;
+        margin: 0;
+        text-indent: 0;
+    }
+
+    h3{
+        display: block;
+        margin: 0 auto 1em !important;
+        padding: 0 !important;
+        width: 90%;
+        text-align: center;
+        font-size: 120%!important;
+    }
+
+    h3 .title{
+        display: block;
+    }
+
+    h4{
+        font-size: 140%!important;
+    }
+
+    #searchform{
+        width: 95%!important;
+        margin: -3em auto -2em!important;
+    }
+
+    #s {
+        width: 74%!important;
+        padding: 2%!important;
+      }
+
+    #searchsubmit {
+        width: 20%!important;
+        padding: 2%!important;
+    }
+
+    details{
+        margin: 0.5em 0 4.5em;
+        font-size: 1em!important;
+    }
+
+}

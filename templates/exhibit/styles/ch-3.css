@@ -1,0 +1,61 @@
+:root{
+    --scrollbar-color: #3f6262;
+    --text-color:rgb(47, 69, 72);
+    --header-background: #3f6262;
+    --header-color: #cacaca;
+    --main-background: #cacaca;
+    --character-font: 'Mrs Saint Delafield';
+    --h3-color: #3f6262;
+    --blockquote-color:rgb(50, 58, 50);
+    --footer-background: #a3a193;
+    --footer-text-color: #1f3434;
+    --pagetop-background: rgb(141, 141, 141);
+    --pagebottom-background: #3f6262;
+    --bottom-pagination-color: #cacaca;
+    --top-pagination-color: #3f6262;
+    --bottom-pagination-text-hover: #3f6262;
+    --bottom-pagination-background-hover: rgb(164, 164, 164);
+    --top-pagination-text-hover: #cacaca;
+    --top-pagination-background-hover: #3f6262;
+    --pagination-color: #cacaca;
+    --main-border: url('..../../images/ch3-border.png');
+    --hr-image: url('..../../images/ch3-hr.png');
+    --current-color: #3f6262;
+    --logo-image: url('../../images/jasmine_sigil_gray-768x768.png');
+    --darkmode-icon-default: url('images/lh-dark.png');
+    --darkmode-icon-gold: url('images/lh-light.png');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+
+    #navigation{
+        font: normal 1.75em 'Playfair', serif !important;
+    }
+
+    h3{
+        font-size: 2em!important;
+    }
+
+    .pagebottom{
+        margin-bottom: -5em;
+    }
+
+    h3 a:hover, h3 a:active{
+        text-decoration-thickness: 1px!important;
+    }
+
+    @media only screen and (max-width: 1020px) and (min-width: 768px) {
+
+        #archive #navigation{
+            margin-top: -6em!important;
+            font-size: 1.3em!important;
+        }
+    }
+
+    @media only screen and (max-width: 767px) and (min-width: 0px){
+
+        #archive #navigation{
+            margin-top: -5.5em !important;
+            font-size: 1em !important;
+        }
+    }

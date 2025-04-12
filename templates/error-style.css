@@ -1,0 +1,114 @@
+/** Colors take from base-style.css **/
+
+/** Global site fonts **/
+
+*, html{
+    box-sizing: initial!important;
+    scrollbar-color: var(--footer-background) transparent;
+}
+
+body{
+    background: var(--header-background);
+}
+
+main{
+    border-image: none;
+    background: var(--header-background);
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+}
+
+#footer{
+    display: none;
+}
+
+h1{
+    color: var(--footer-background);
+    font: normal 8em 'Girassol', serif;
+    letter-spacing: 4px;
+    padding: 0;
+}
+
+h2{
+    font: normal 3em 'Cormorant Garamond', serif;
+    color: var(--main-background);
+}
+
+#search{
+    padding: 5em 0;
+}
+
+#searchform{
+    margin: 0 auto;
+}
+
+#s{
+    width: 60%;
+}
+
+#searchsubmit{
+    width: 19%;
+}
+
+input[type="submit"]{
+    border: 3px double var(--main-background);
+    background: var(--main-background);
+    font: normal 1.1em 'Cormorant Garamond';
+    color: var(--search-background);
+  }
+  
+  input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:target{
+      background: var(--footer-background);
+      border: 3px double var(--footer-background);
+      outline: none;
+  }
+
+  input[type=text]{
+    background: var(--main-background);
+    border: 3px double var(--header-background);
+  }
+  
+  input[type="text"]:hover, input[type="text"]:target, input[type="text"]:active, input[type="text"]:focus{
+      outline: 2px solid var(--footer-background);
+  }
+
+  #bottom{
+    font: normal 1.5em 'Loved by the King';
+    color: var(--main-background);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  #bottom a:hover, #bottom a:focus, #bottom a:active{
+    color: var(--footer-background);
+    text-decoration: none;
+  }
+
+  .theme-switch-wrapper{
+    display: none;
+  }
+
+  /** smaller tablets and mobile styling **/
+    
+@media only screen and (max-width: 767px) and (min-width: 0px) {
+
+    main{
+        width: 95%;
+        margin-top: 3rem;
+    }
+
+    #search{
+        padding: 0 0 3em;
+    }
+
+    #searchform{
+        width: 100%;
+    }
+
+    #s, #searchsubmit{
+        width: 15rem;
+        margin: 0 auto 1em;
+    }
+
+}

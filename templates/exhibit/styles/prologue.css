@@ -1,0 +1,44 @@
+:root{
+    --scrollbar-color: #657a95;
+    --text-color:rgb(60, 72, 81);
+    --header-background: #657a95;
+    --header-color: #c2cdcd;
+    --main-background: #ccd7d8;
+    --character-font: 'Nothing You Could Do';
+    --h3-color: #657a95;
+    --blockquote-color:rgb(93, 113, 139);
+    --footer-background:rgb(121, 155, 158);
+    --footer-text-color: rgb(29, 38, 57);
+    --pagetop-background: rgb(121, 155, 158);
+    --pagebottom-background: #657a95;
+    --bottom-pagination-color: #c2cdcd;
+    --top-pagination-color: #c2cdcd;
+    --bottom-pagination-text-hover: #c2cdcd;
+    --bottom-pagination-background-hover: rgb(121, 155, 158);
+    --top-pagination-text-hover: #c2cdcd;
+    --top-pagination-background-hover: #657a95;
+    --pagination-color: #c2cdcd;
+    --main-border: url('..../../images/prologue-border.png');
+    --hr-image: url('..../../images/prologue-hr.png');
+    --current-color: rgb(121, 155, 158);
+    --logo-image: url('../../images/jasmine_sigil_gray-768x768.png');
+    --darkmode-icon-default: url('images/lh-dark.png');
+    --darkmode-icon-gold: url('images/lh-light.png');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+    #navigation{
+        font: normal 1.5em 'Nothing You Could Do';
+    }
+
+    .pagebottom{
+        margin-bottom: -5em;
+    }
+
+@media only screen and (max-width: 1020px) and (min-width: 768px) {
+
+    #archive #navigation{
+        margin-top: -7.5em!important;
+    }
+}

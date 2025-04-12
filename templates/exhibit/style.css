@@ -1,0 +1,191 @@
+/** Base Stylsheet for all Chapter Posts **/
+
+@import url('https://fonts.googleapis.com/css2?&family=Loved+by+the+King&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900');
+
+a:link, a:visited{
+    text-decoration: underline;
+  }
+
+a:hover, a:active{
+    text-decoration: none;
+}
+
+#header{
+    background: var(--header-background);
+    padding: 50px;
+}
+
+.chapternav, #navigation a{
+    display: none;
+}
+
+.chapternav:first-child, #navigation a:first-child{
+    display: inline;
+}
+
+#site, #navigation{
+    width: 50%;
+  }
+
+#name{
+    padding: 0;
+  margin-left: 50px;
+  vertical-align: middle;
+}
+
+#site a:link, #site a:visited{
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+#archive #navigation{
+    margin-top: -150px;
+    width: 50%;
+    float: right;
+    display: block;
+    text-align: right;
+    padding-right: 50px;
+    color: var(--header-color);
+}
+
+#navigation a:link, #navigation a:visited, h1 a:link, h1 a:visited, h3 a:link, h3 a:visited{
+    text-decoration: none;
+}
+
+#navigation a:hover, #navigation a:active, h1 a:hover, h1 a:active{
+    text-decoration: underline;
+}
+
+#logo{
+    background: var(--logo-image);
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#entry{
+    width: 50em;
+    margin: 0 auto;
+}
+
+h1{
+    padding: 0;
+}
+
+h2{
+    font: normal 1.8em 'Source Code Pro', monospace !important;
+    padding: 1em;
+    letter-spacing: 0px;
+}
+
+h3{
+    font-style: normal;
+    font-weight: normal;
+    font-family: var(--character-font), serif !important;
+    font-size: 1.5em;
+    padding: 0.5em 0 1.5em 0;
+    text-align: center;
+    color: var(--h3-color);
+}
+
+h3 a:hover, h3 a:active{
+    text-decoration: underline wavy;
+}
+
+.pagebottom, .pagetop{
+    font: normal 1.5em 'Loved by the King', serif !important;
+}
+
+.pagebottom a:link, .pagebottom a:visited, .pagetop a:link, .pagetop a:visited,  {
+    padding: 0 1em;
+}
+
+  .pagebottom{
+    margin-top: 0;
+    height: 7.75em;
+  }
+
+  @media only screen and (max-width: 1020px) and (min-width: 768px) {
+
+    #site{
+        margin: 0;
+    }
+
+    #name{
+        margin-left: 20px;
+        font-size: 1.2em;
+    }
+
+    #archive #logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    #archive #navigation{
+        background: var(--header-background)!important;
+        font-size: 1.1em;
+    }
+
+    #entry {
+        width: 90%;
+    }
+
+    .pagebottom, .pagetop{
+        font-size: 90%!important;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 0px) {
+
+   #archive #logo {
+        height: 60px;
+        width: 60px;
+      }
+
+    #header{
+        padding: 20px;
+    }
+
+    #site{
+        width: 100%;
+    }
+
+    #name{
+        display: none;
+    }
+
+    #navigation{
+        margin-top: -6.75em !important;
+        font-size: 0.95em;
+        width: 18rem!important;
+        padding-right: 20px!important;
+        background: none;
+    }
+
+    h2{
+        font-size: 150%!important;
+    }
+
+    h3{
+        font-size: 145%!important;
+        padding: 0.5em 0;
+    }
+
+    h4{
+        font-size: 140%!important;
+    }
+
+    .pagetop{
+        display: block;
+        text-align: center;
+    }
+
+    .pagebottom{
+        text-align: unset;
+    }
+
+    .pagebottom, .pagetop{
+        font-size: 90%!important;
+    }
+
+}

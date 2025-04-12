@@ -1,0 +1,55 @@
+:root{
+    --scrollbar-color: #4e3f62;
+    --text-color:rgb(79, 60, 81);
+    --header-background: #4e3f62;
+    --header-color: #ffe8db;
+    --main-background: #ffe8db;
+    --character-font: 'Homemade Apple';
+    --h3-color: #4e3f62;
+    --blockquote-color:rgb(53, 50, 58);
+    --footer-background: #bdacc6;
+    --footer-text-color: rgb(40, 29, 57);
+    --pagetop-background: rgb(133, 121, 158);
+    --pagebottom-background: #4e3f62;
+    --bottom-pagination-color: #ffe8db;
+    --top-pagination-color: #4e3f62;
+    --bottom-pagination-text-hover: #4e3f62;
+    --bottom-pagination-background-hover: #bdacc6;
+    --top-pagination-text-hover: #ffe8db;
+    --top-pagination-background-hover: #4e3f62;
+    --pagination-color: #ffe8db;
+    --main-border: url('..../../images/ch2-border.png');
+    --hr-image: url('..../../images/ch2-hr.png');
+    --current-color: #4e3f62;
+    --logo-image: url('../../images/jasmine_sigil_ch2-768x768.png');
+    --darkmode-icon-default: url('images/lh-dark.png');
+    --darkmode-icon-gold: url('images/lh-light.png');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+    #navigation{
+        font: normal 1.35em 'Homemade Apple';
+    }
+
+    .pagebottom{
+        margin-bottom: -5em;
+    }
+
+@media only screen and (max-width: 1020px) and (min-width: 768px) {
+        
+    #archive #navigation {
+        margin-top: -8.5em !important;
+        font-size: 0.9em!important;
+        }
+      
+    }
+
+@media only screen and (max-width: 767px) and (min-width: 0px) {
+
+    #archive #navigation{
+        font-size: 0.8em;
+        margin-top: -8em !important;
+    }
+
+}

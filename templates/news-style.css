@@ -1,0 +1,125 @@
+/* 
+News Stylesheet for Lighthouse. Displays all posts within the news category, does not link to each entry as an individual post.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Girassol&family=Passions+Conflict&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{ /** base light style **/
+    --scrollbar-color: #191114;
+    --text-color: #332d2d;
+    --header-background: #22274b;
+    --header-color: #cdbfb8;
+    --sub-menu-background: #cdbfb8;
+    --sub-menu-border: #948c9e;
+    --sub-menu-text: #22274b;
+    --main-background: #cdbfb8;
+    --exhibit-button-background: #e6c66f;
+    --exhibit-button-color: #534315;
+    --exhibit-button-background-hover: #285283;
+    --footer-background: #39282e;
+    --footer-text-color: #cdbfb8;
+    --h1-color: #22274b;
+    --h2-color: #39282e;
+    --date-color: #22274b;
+    --signature-color: #22274b;
+    --main-border: url('images/news-border.png');
+    --hr-image: url('images/news-hr.png'); 
+    --pagetop-background: #39282e;
+    --pagebottom-background: #22274b;
+    --bottom-pagination-color: #cdbfb8;
+    --bottom-pagination-text-hover: #cdbfb8;
+    --bottom-pagination-background-hover: #644f64;
+    --current-color: #22274b;
+    --darkmode-icon-default: url('images/lh-dark.png');
+    --darkmode-icon-gold: url('images/lh-light.png');
+    --nav-button-link: #cdbfb8;
+    --nav-button-background: #39282e;
+    --nav-menu-background: #3c4169;
+}
+
+[data-theme="dark"]{
+    --h1-color: #93c1d7;
+    --h2-color: #c4d5df;
+    --date-color: #93c1d7;
+    --signature-color: #c4d5df;
+}
+
+main{
+    padding-bottom: 2.5em;
+}
+
+#logo{
+    background: url('../images/jasmine_sigil_cream-768x768.png')!important;
+    background-size: cover!important;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h1{
+    font: normal 4em 'Girassol', serif !important;
+    font-weight: 700 !important;
+    margin: 0 auto;    
+    padding: 1em 0 0.5em!important;
+    color: var(--h1-color);
+    font-weight: normal!important;
+    text-transform: uppercase;
+    letter-spacing: 5px
+}
+
+h1:before, h1:after{
+    content: ' - ';
+}
+
+h2{
+    color: var(--h2-color);
+    font-family: 'Playfair', serif !important;
+    letter-spacing: -1px!important;
+    padding-bottom: 0.5em;
+}
+
+date{
+    text-align: center;
+    display: block;
+    color: var(--date-color);
+    padding-bottom: 1em;
+    font: italic 1.2em 'Playfair', serif !important;
+}
+
+main a:link, main a:visited{
+    text-decoration: underline;
+}
+
+main a:hover, main a:active{
+    text-decoration: none;
+}
+
+.entry p:last-child{
+    font: normal 3em 'Passions Conflict', serif !important;
+    text-align: right;
+    color: var(--signature-color)
+}
+
+/** larger tablets **/
+
+@media only screen and (max-width: 1020px) and (min-width: 768px) {
+
+    html {
+        -webkit-text-size-adjust: 100%;
+        }
+
+}
+
+/** smaller tablets and mobile styling **/
+    
+@media only screen and (max-width: 767px) and (min-width: 0px) {
+    
+    h1{
+        font-size: 300%!important;
+        padding: 1em 0 0!important;
+    }
+
+    .entry{
+        padding: 1em 0!important;
+    }
+
+}

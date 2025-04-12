@@ -1,0 +1,65 @@
+:root{
+    --scrollbar-color: #ff9100;
+    --text-color:#422824;
+    --header-background: #a33f2d;
+    --header-color: #ffbe7d;
+    --main-background: #f6cda4;
+    --character-font: 'Liu Jian Mao Cao';
+    --h3-color: #c34141;
+    --blockquote-color:rgb(103, 34, 34);
+    --footer-background: #923434;
+    --footer-text-color: #ffbe7d;
+    --pagetop-background: #e79440;
+    --pagebottom-background: #e17848;
+    --bottom-pagination-color: #a33f2d;
+    --top-pagination-color: #ffbe7d;
+    --bottom-pagination-text-hover: #ffbe7d;
+    --bottom-pagination-background-hover: #872e2e;
+    --top-pagination-text-hover: #f6cda4;
+    --top-pagination-background-hover: #872e2e;;
+    --pagination-color: #a33f2d;
+    --main-border: url('..../../images/ch6-border.png');
+    --hr-image: url('..../../images/ch6-hr.png');
+    --current-color: #ffbe7d;
+    --logo-image: url('../../images/jasmine_sigil_ch6-768x768.png');
+    --h1-color: rgb(103, 0, 0);
+    --darkmode-icon-default: url('images/lh-dark-ch6.png');
+    --darkmode-icon-gold: url('images/lh-light.png');
+}
+
+    [data-theme="dark"]{ /** this is declared because h1 light version is declared below **/
+        --h1-color: #c4d5df; 
+    }
+
+    #navigation{
+        font: normal 2em 'Liu Jian Mao Cao', serif !important;
+    }
+
+    .pagebottom{
+        margin-bottom: -5em;
+    }
+
+    h1{
+        color: var(--h1-color);
+    }
+
+    h3 a:hover, h3 a:active{
+        text-decoration-thickness: 1px!important;
+    }
+
+    @media only screen and (max-width: 1020px) and (min-width: 768px) {
+
+        #archive #navigation{
+            margin-top: -5em!important;
+            font-size: 1.6em!important;
+        }
+    }
+
+    @media only screen and (max-width: 767px) and (min-width: 0px){
+
+        #archive #navigation{
+            margin-top: -5em !important;
+            font-size: 1.2em !important;
+        }
+
+    }

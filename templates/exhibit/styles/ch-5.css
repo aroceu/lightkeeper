@@ -1,0 +1,65 @@
+:root{
+    --scrollbar-color: #dbbccb;
+    --text-color:#2f3d48;
+    --header-background: #98b2c6;
+    --header-color: #2f3d48;
+    --main-background: #d8d8d8;
+    --character-font: 'Playwrite US Modern';
+    --h3-color: #7e9cb3;
+    --blockquote-color:rgb(61, 71, 78);
+    --footer-background: #a9b7c3;
+    --footer-text-color: #2f3d48;
+    --pagetop-background: #c4c4c4;
+    --pagebottom-background: #c4c4c4;
+    --bottom-pagination-color: #d8d8d8;
+    --top-pagination-color: rgb(60, 80, 89);
+    --bottom-pagination-text-hover: #d4aebf;
+    --bottom-pagination-background-hover: #d8d8d8;
+    --top-pagination-text-hover: #d4aebf;
+    --top-pagination-background-hover: #d8d8d8;
+    --pagination-color: rgb(60, 80, 89);
+    --main-border: url('..../../images/ch5-border.png');
+    --hr-image: url('..../../images/ch5-hr.png');
+    --current-color: rgb(60, 80, 89);
+    --logo-image: url('../../images/jasmine_sigil_ch5-768x768.png');
+    --darkmode-icon-default: url('images/lh-dark-ch5.png');
+    --darkmode-icon-gold: url('images/lh-light.png');
+}
+
+    #navigation{
+        font: normal 1.5em 'Playwrite US Modern', serif !important;
+    }
+
+    .pagebottom{
+        margin-bottom: -5em;
+    }
+
+    h3{
+        font-size: 1.2em!important;
+    }
+
+    h3 a:hover, h3 a:active{
+        text-decoration-thickness: 1px!important;
+    }
+
+    @media only screen and (max-width: 1020px) and (min-width: 768px) {
+
+        #archive #navigation{
+            margin-top: -7.5em!important;
+            font-size: 1em!important;
+        }
+    }
+
+    @media only screen and (max-width: 767px) and (min-width: 0px){
+
+        #archive #navigation{
+            margin-top: -7em !important;
+            font-size: 0.9em !important;
+        }
+
+        h3 a[rel="tag"]{
+            font-size: 70%!important;
+            margin-top: -0.5em!important;
+            display: block;
+        }
+    }

@@ -1,0 +1,43 @@
+:root{ /** base light style **/
+    --scrollbar-color: #285283;
+    --text-color: #3a3c40;
+    --header-background: #285283;
+    --header-color: #c2cdcd;
+    --sub-menu-background: #CBE5F6;
+    --sub-menu-border: #00000026;
+    --sub-menu-text: #285283;
+    --main-background: #CBE5F6;
+    --exhibit-button-background: #e6c66f;
+    --exhibit-button-color: #534315;
+    --exhibit-button-background-hover: #285283;
+    --exhibit-button-color-hover: #e6c66f;
+    --footer-background: #e6c66f;
+    --footer-text-color: #3a3c40;
+    --h3-color: #2b4056;
+    --pagetop-background: #e6c66f;
+    --pagebottom-background: #285283;
+    --top-pagination-color: #285283;
+    --bottom-pagination-color: #CBE5F6;
+    --bottom-pagination-text-hover: #285283;
+    --bottom-pagination-background-hover: #CBE5F6;
+    --top-pagination-text-hover: #CBE5F6;
+    --top-pagination-background-hover: #285283;
+    --hr-style: 1px solid #657a95;
+    --current-color: #285283;
+    --results-underline-color: #7099bd;
+    --main-border: url('images/base-border.png');
+    --hr-image: url('images/base-hr.png');    
+    --submit-background-hover: #e6c66f;
+    --submit-color-hover: #285283;
+    --darkmode-icon-default: url('images/lh-dark.png');
+    --darkmode-icon-gold: url('images/lh-light.png');
+    --readmore-background: #9ec3db;
+    --readmore-hover: #7ba2bc;
+    --nav-button-link: #c2cdcd;
+    --nav-button-background: #5075a2;
+    --nav-menu-background: #285283;
+}
+
+.pagebottom, .pagetop{
+    font: normal 1.1em 'Spectral', serif !important;
+}
