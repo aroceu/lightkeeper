@@ -16,7 +16,7 @@
  
 get_header(); ?>
  
- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/templates/exhibit-style.css" type="text/css" media="screen" /> <!-- Exhibit stylesheet (similar to base stylsheet, but with minor differences) --> -->
+ <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/templates/exhibit-style.css" type="text/css" media="screen" /> <!-- Exhibit stylesheet (similar to base stylsheet, but with minor differences) -->
  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" /> <!-- Master stylesheet -->
 
 </head>
