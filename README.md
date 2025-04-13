@@ -2,7 +2,23 @@
 
  Theme for Berelyse.org, a WordPress theme for a narrative web project told through prose and some mixed media.
 
- ## How to Install
+ ### Table of Contents
+
+ 1. [Installation](#installation)
+ 2. [Theme Setup](#theme-setup)
+    - [Menus](#menus)
+    - [Widgets](#widgets)
+    - [Page Templates](#page-templates)
+        - [Front Page](#front-page)
+        - [Archive Page](#archive-page)
+    - [Categories](#categories)
+    - [Entry Types](#entry-types)
+    - [Plugins](#plugins)
+    - [Site Settings](#site-settings)
+3. [Additional Notes](#additional-notes)
+    - [Character Signatures](#character-signatures)
+
+ # Installation
 
 This theme is best installed via the WordPress plugin "Deployer for Git."
 
