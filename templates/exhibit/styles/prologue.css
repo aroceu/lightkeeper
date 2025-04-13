@@ -21,9 +21,9 @@
     --main-border: url('..../../images/prologue-border.png');
     --hr-image: url('..../../images/prologue-hr.png');
     --current-color: rgb(121, 155, 158);
-    --logo-image: url('../../images/jasmine_sigil_gray-768x768.png');
-    --darkmode-icon-default: url('images/lh-dark.png');
-    --darkmode-icon-gold: url('images/lh-light.png');
+    --logo-image: url('images/jasmine_sigil_gray-768x768.png'); /** gets read from templates/exhibit/header.php for mobile purposes **/
+    --darkmode-icon-default: url('images/lh-dark.png'); /** gets read from the base footer **/
+    --darkmode-icon-gold: url('images/lh-light.png'); /** gets read from base footer **/
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
