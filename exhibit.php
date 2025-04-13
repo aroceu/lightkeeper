@@ -50,7 +50,8 @@ get_header(); ?>
             $args = array( 'category_name' => 'launch', 
             'post_type' =>  'post', 
             'orderby'    => 'menu_order',
-            'sort_order' => 'asc'); 
+            'sort_order' => 'ASC',
+            'numberposts' => '-1'); 
             $postslist = get_posts( $args );    
             $arr_posts = new WP_Query( $args );
         
@@ -82,7 +83,8 @@ get_header(); ?>
             $args = array( 'category_name' => 'i', 
             'post_type' =>  'post', 
             'orderby'    => 'menu_order',
-            'sort_order' => 'asc'); 
+            'sort_order' => 'ASC',
+            'numberposts' => '-1'); 
             $postslist = get_posts( $args );    
             $arr_posts = new WP_Query( $args );
         
@@ -114,7 +116,8 @@ get_header(); ?>
             $args = array( 'category_name' => 'ii', 
             'post_type' =>  'post', 
             'orderby'    => 'menu_order',
-            'sort_order' => 'asc'); 
+            'sort_order' => 'ASC',
+            'numberposts' => '-1'); 
             $postslist = get_posts( $args );    
             $arr_posts = new WP_Query( $args );
         
@@ -146,7 +149,8 @@ get_header(); ?>
             $args = array( 'category_name' => 'iii', 
             'post_type' =>  'post', 
             'orderby'    => 'menu_order',
-            'sort_order' => 'asc'); 
+            'sort_order' => 'ASC',
+            'numberposts' => '-1'); 
             $postslist = get_posts( $args );    
             $arr_posts = new WP_Query( $args );
         
@@ -178,7 +182,8 @@ get_header(); ?>
             $args = array( 'category_name' => 'iv', 
             'post_type' =>  'post', 
             'orderby'    => 'menu_order',
-            'sort_order' => 'asc'); 
+            'sort_order' => 'ASC',
+            'numberposts' => '-1'); 
             $postslist = get_posts( $args );    
             $arr_posts = new WP_Query( $args );
         
@@ -210,7 +215,8 @@ get_header(); ?>
             $args = array( 'category_name' => 'v', 
             'post_type' =>  'post', 
             'orderby'    => 'menu_order',
-            'sort_order' => 'asc'); 
+            'sort_order' => 'ASC',
+            'numberposts' => '-1'); 
             $postslist = get_posts( $args );    
             $arr_posts = new WP_Query( $args );
         
@@ -242,7 +248,8 @@ get_header(); ?>
             $args = array( 'category_name' => 'vi', 
             'post_type' =>  'post', 
             'orderby'    => 'menu_order',
-            'sort_order' => 'asc'); 
+            'sort_order' => 'ASC',
+            'numberposts' => '-1'); 
             $postslist = get_posts( $args );    
             $arr_posts = new WP_Query( $args );
         
