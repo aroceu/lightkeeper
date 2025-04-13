@@ -21,7 +21,7 @@
     --main-border: url('..../../images/prologue-border.png');
     --hr-image: url('..../../images/prologue-hr.png');
     --current-color: rgb(121, 155, 158);
-    --logo-image: url('..../../images/jasmine_sigil_gray-768x768.png');
+    --logo-image: url('../../images/jasmine_sigil_gray-768x768.png');
     --darkmode-icon-default: url('images/lh-dark.png');
     --darkmode-icon-gold: url('images/lh-light.png');
 }
