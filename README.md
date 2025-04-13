@@ -133,13 +133,13 @@ If a post is not put into a category properly, it will not break the theme, but 
 
  # Additional Notes
 
- - The number of posts per page for search, filter, and category results can be toggled from WordPress Dashboard &gt; Settings &gt; Reading &gt; Blog pages show at most [] posts.
  - New users can be added to write off on News posts only. (They will not show up on chapter entries/posts.)
  - The last line for any post categorized as "News" will automatically format to be right-aligned with a custom font as an automatic signature.
  - Chronology:
     - The news category page displays all posts categorized as "News" from newest to oldest. 
     - The chapter category pages display all posts categorized in the respective chapter from oldest to newest.
     - The archive page displays the list of posts from oldest to newest.
+- The number of News posts that show up in the News category link is specified by the template page, and is not affected by the posts per page setting in the WordPress Dashboard.
 
 ## Character Signatures
 
