@@ -13,11 +13,11 @@ To install:
 4. Dashboard &gt; Deployer for Git (in the sidebar)
 5. Add Theme
 6. Use the URL for this very page as the URL for the Github repository.
-7. To update the theme after I have committed new updates, come back to this dashboard and click "Update Theme."
+7. To update the theme after new updates have been committed, come back to the Deployer for Git dashboard and click "Update Theme" under the respective theme.
 
  # Theme Setup
 
- The theme requires the site to be setup properly from the backend in order for things to appear properly.
+ The theme requires the site to be set up properly from the backend in order for things to appear properly.
 
  ## Menus
 
@@ -96,7 +96,7 @@ If a post is not put into a category properly, it will not break the theme, but 
  **Recommended Plugins:**
  - "No Category Base (WPML)" by Marios Alexandrou: https://wordpress.org/plugins/no-category-base-wpml/
 
- ### Site Settings
+ ## Site Settings
 
  The theme pulls in from the following standard settings (Dashboard &gt; Settings):
 - Site Title, as the name of the website in the header on most front matter pages, as well as in the window title
@@ -115,7 +115,7 @@ If a post is not put into a category properly, it will not break the theme, but 
 **Permalink Settings**
 - Permalink structure &gt; Custom Structure &gt; "/%category%/%post_id%/"
 
- ### Additional Notes
+ # Additional Notes
 
  - The number of posts per page for search, filter, and category results can be toggled from WordPress Dashboard &gt; Settings &gt; Reading &gt; Blog pages show at most [] posts.
  - New users can be added to write off on News posts only. (They will not show up on chapter entries/posts.)
@@ -125,7 +125,7 @@ If a post is not put into a category properly, it will not break the theme, but 
     - The chapter category pages display all posts categorized in the respective chapter from oldest to newest.
     - The archive page displays the list of posts from oldest to newest.
 
-#### Character Signatures
+## Character Signatures
 
 Some characters have customized signatures for their associated font. The code must be added to the post as HTML, by either:
 
