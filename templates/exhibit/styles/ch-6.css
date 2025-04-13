@@ -22,6 +22,7 @@
     --hr-image: url('..../../images/ch6-hr.png');
     --current-color: #ffbe7d;
     --logo-image: url('../../images/jasmine_sigil_ch6-768x768.png');
+    --mobile-logo-image: url('https://berelyse.org/wp-content/themes/lightkeeper/images/jasmine_sigil_ch6-768x768.png'); /** mobile with full url due to responsive link stuff **/
     --h1-color: rgb(103, 0, 0);
     --darkmode-icon-default: url('images/lh-dark-ch6.png');
     --darkmode-icon-gold: url('images/lh-light.png');
