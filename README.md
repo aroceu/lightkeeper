@@ -4,46 +4,16 @@
 
  ## How to Install
 
-### Manual Installation (FTP/cPanel)
- 1. On this page, click Code &gt; Download ZIP
- 2. Extract the ZIP
- 3. Log into your FTP/cPanel
- 4. Navigate to your public_html  &gt; WordPress folder  &gt; wp-content  &gt; themes
- 5. Drop or upload the folder into the themes folder
- 6. Go to your WordPress Dashboard in your web browser &gt; Themes
- 7. Activate the theme ("Lightkeeper")
- 8. This process will need to be repeated from steps 1-7 in order to pull updates and bug fixes in the theme.
+This theme is best installed via the WordPress plugin "Deployer for Git."
 
- ### Manual Installation (FTP/cPanel)
- 1. On this page, click Code &gt; Download ZIP
- 2. Extract the ZIP
- 3. Log into your FTP/cPanel
- 4. Navigate to your public_html  &gt; WordPress folder  &gt; wp-content  &gt; themes
- 5. Drop or upload the folder into the themes folder
- 6. Go to your WordPress Dashboard in your web browser &gt; Themes
- 7. Activate the theme ("Lightkeeper")
- 8. This process will need to be repeated from steps 1-7 in order to pull updates and bug fixes in the theme.
-
-### cPanel Installation (Github Version control)
-1. Navigate to your site's cpanel (domain.com/cpanel)
-2. Files &gt; Git Version Control. You can also search for Git Version Control.
-3. Click "Create" (Create Repository)
-    i. Keep "Clone a Repository" toggled to be enabled.
-    ii. Skip Clone URL for now
-    iii. Repository Path: Enter the path of your WordPress themes, which, within your WordPress directory, should be /wp-content/themes/
-    iv. Repository Name: Can be whatever you want, as it is only for what it will be named inside Git Version Control. I'd suggest keeping "lightkeeper" anyway, for intuitive reasoning purposes.
-4. Navigate back to this Github page with the theme.
-5. Code &gt; Copy the HTTPS URL.
-6. Paste into the Clone URL field.
-7. Create. The theme is now uploaded into your website's file directory.
-8. Go to your WordPress Dashboard in your web browser &gt; Themes
-9. Activate the theme ("Lightkeeper")
-10. To update the theme: Git Version Control &gt; Manage (next to how the repository was named during setup) &gt; Pull or Deploy &gt; Update from Remote
-11. Do not edit any of the WordPress theme files directly (through the WP Theme Editor or in the theme directory) if uploading through Git Version Control, the version mismatches will break the theme and it will have to be re-installed.
-
-### WordPress Plugin Installation
-
-TBD
+To install:
+1. WordPress Dashboard &gt; Plugins &gt; Add New Plugin
+2. Search for "Deployer for Git," then Install.
+3. Activate plugin.
+4. Dashboard &gt; Deployer for Git (in the sidebar)
+5. Add Theme
+6. Use the URL for this very page as the URL for the Github repository.
+7. To update the theme after I have committed new updates, come back to this dashboard and click "Update Theme."
 
  ## Theme Setup
 
@@ -72,14 +42,23 @@ TBD
 
  ### Page Templates
 
+ *Templates will not show up without the theme being installed first.*
+
  #### Front Page
  1. Click to edit the page you want to be the front page.
  2. In the page metadata (far right sidebar), click on the link beside where it says "Template" (should say "Default Template").
- 3. In the dropdown, select "Front Page." 
+ 3. In the dropdown, select "Front Page". 
  4. Save.
  5. Go back to your WordPress Dashboard &gt; Settings &gt; Reading.
  6. Reading Settings &gt; Your homepage displays &gt; "A static page" &gt; Select the corresponding page (the one that was just assigned the template).
  7. Save.
+
+ #### Archive Page
+ 1. Click to edit the page you want to be the archive page.
+ 2. On the page text, anything added into the body content will appear the search form on the template.
+ 3. To set up the template, in the page metadata (far right sidebar), click on the link beside where it says "Template" (should say "Default Template").
+ 4. In the dropdown, select "Exhibition Page, aka archive masterlist".
+5. Save.
 
  ### Categories
 
@@ -88,7 +67,7 @@ TBD
  The required categories and their hierarchy are as follows. Note that the name of the category can be anything - this is only for the slug.
 
  - news
- - archives (this is not required, but recommended)
+ - archives (recommended)
     - launch
     - i
     - ii
@@ -97,7 +76,7 @@ TBD
     - v
     - vi
 
-Posts should be only in one category. Posts within the "archives" child categories can have the child category selected without selecting the parent category ("archives").
+Posts should be only in one category. Posts within the "archives" child categories - i.e. chapters - can have the child category selected without selecting the parent category ("archives").
 
 If a post is not put into a category properly, it will not break the theme, but it will make things look weird on some pages.
 
@@ -125,3 +104,4 @@ If a post is not put into a category properly, it will not break the theme, but 
  ### Additional Notes
 
  - The number of posts per page for search, filter, and category results can be toggled from WordPress Dashboard &gt; Settings &gt; Reading &gt; Blog pages show at most [] posts.
+ character signatures
