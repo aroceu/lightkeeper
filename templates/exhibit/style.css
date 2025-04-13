@@ -150,6 +150,10 @@ h3 a:hover, h3 a:active{
         width: 100%;
     }
 
+    #logo{
+        background: var(--mobile-logo-image);
+    }
+
     #name{
         display: none;
     }
