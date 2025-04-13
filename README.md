@@ -139,7 +139,7 @@ If a post is not put into a category properly, it will not break the theme, but 
     - The news category page displays all posts categorized as "News" from newest to oldest. 
     - The chapter category pages display all posts categorized in the respective chapter from oldest to newest.
     - The archive page displays the list of posts from oldest to newest.
-- The number of News posts that show up in the News category link is specified by the template page, and is not affected by the posts per page setting in the WordPress Dashboard.
+- The number of News posts that show up in the News category link is specified by the template page in the code, and is not affected by the posts per page setting in the WordPress Dashboard.
 
 ## Character Signatures
 
