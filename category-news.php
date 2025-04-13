@@ -37,7 +37,7 @@
                 <div class="entry" id="post-<?php the_ID(); ?>">
                 
                     <h2><?php the_title(); ?> </h2>
-                    <date>Posted on <?php the_time('m/j/Y') ?> by <?php the_author ('') ?> <?php edit_post_link('Edit', '&bull; ', ''); ?></date>
+                    <date>Posted on <?php echo get_the_date(); ?> by <?php the_author ('') ?> <?php edit_post_link('Edit', '&bull; ', ''); ?></date>
                 
                         <?php the_content(); ?>
                         
