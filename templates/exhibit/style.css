@@ -152,6 +152,7 @@ h3 a:hover, h3 a:active{
 
     #logo{
         background: var(--mobile-logo-image);
+        background-size: cover;
     }
 
     #name{
