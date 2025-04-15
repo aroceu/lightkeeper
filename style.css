@@ -66,6 +66,8 @@ body{
     font: normal 100%/160% 'Spectral', serif;
     color: var(--text-color);
     background: var(--footer-background); /** so the footer doesn't look weird if the page is too short **/
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 #index #header{
@@ -433,7 +435,7 @@ blockquote{
 }
 
 #footer .footer-box:nth-child(2){
-    padding: 0px 5em;
+    padding: 0px 4em;
 }
 
 .box{
