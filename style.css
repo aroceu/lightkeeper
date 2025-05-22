@@ -779,7 +779,7 @@ input:checked + .slider:hover:after{
     }
 
     #footer .footer-box:nth-child(2) {
-        padding: 0px 3em;
+        padding: 0px;
       }
 
     }
