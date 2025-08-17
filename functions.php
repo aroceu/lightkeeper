@@ -221,7 +221,7 @@ function custom_wp_trim_excerpt($text) {
         $allowed_tags = '<p>,<a>,<em>,<strong>,<li>,<ul>,<ol>,<blockquote>,<img>,<h2>,<div>,<figure>'; 
         $text = strip_tags($text, $allowed_tags);
          
-        $excerpt_word_count = 40; 
+        $excerpt_word_count = 100; 
         $excerpt_length = apply_filters('excerpt_length', $excerpt_word_count); 
          
         $excerpt_end = '</blockquote></p><a class="readmore" href="'. get_permalink( get_the_ID() ) . '">Read more &raquo;</a>';
