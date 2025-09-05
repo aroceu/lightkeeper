@@ -46,14 +46,43 @@ get_header(); ?>
 
 <!-- Prologue Masterlist -->
 
-[catlist id=11 orderby=ID]
+            <?php
+            $args = array( 'category_name' => 'launch', 
+            'post_type' =>  'post', 
+            'orderby'    => 'ID',
+            'sort_order' => 'ASC',
+            'numberposts' => '-1'); 
+            $postslist = get_posts( $args );    
+            $arr_posts = new WP_Query( $args );
+        
+            if ( $arr_posts->have_posts() ) :
+                $id = 9;
+                $cat_link = '';
+                $category_object = get_category_by_slug( 'launch' );
+                if ( $category_object instanceof WP_Term ) {
+                    $category_link = get_category_link( $category_object->term_id );
+                echo '<a href="' . $category_link . '"><h2>' . get_cat_name($id) . '</a></h2>';
+                }
+
+            foreach ($postslist as $post) :  setup_postdata($post); 
+            ?>  
+            <h3>
+                <span class="type"><?php the_terms( get_the_id(), 'entry', __( " " ), " " ); ?></span>
+                <span class="tag"><?php the_tags('',' ', ''); ?></span>   
+                <span class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></span>
+            </h3> 
+            <?php endforeach; ?> 
+            <?php
+                wp_reset_postdata();
+            endif;
+            ?>
 
 <!-- Chapter One Masterlist (for the corresponding category, edit i ('category_name' and 'get_category_by_slug') to match the slug 
                     and 11 ($id()) to match the ID# for the corresponding category) -->
             <?php
             $args = array( 'category_name' => 'i', 
             'post_type' =>  'post', 
-            'orderby'    => 'menu_order',
+            'orderby'    => 'ID',
             'sort_order' => 'ASC',
             'numberposts' => '-1'); 
             $postslist = get_posts( $args );    
@@ -86,7 +115,7 @@ get_header(); ?>
             <?php
             $args = array( 'category_name' => 'ii', 
             'post_type' =>  'post', 
-            'orderby'    => 'menu_order',
+            'orderby'    => 'ID',
             'sort_order' => 'ASC',
             'numberposts' => '-1'); 
             $postslist = get_posts( $args );    
@@ -119,7 +148,7 @@ get_header(); ?>
                     <?php
             $args = array( 'category_name' => 'iii', 
             'post_type' =>  'post', 
-            'orderby'    => 'menu_order',
+            'orderby'    => 'ID',
             'sort_order' => 'ASC',
             'numberposts' => '-1'); 
             $postslist = get_posts( $args );    
@@ -152,7 +181,7 @@ get_header(); ?>
                     <?php
             $args = array( 'category_name' => 'iv', 
             'post_type' =>  'post', 
-            'orderby'    => 'menu_order',
+            'orderby'    => 'ID',
             'sort_order' => 'ASC',
             'numberposts' => '-1'); 
             $postslist = get_posts( $args );    
@@ -185,7 +214,7 @@ get_header(); ?>
                     <?php
             $args = array( 'category_name' => 'v', 
             'post_type' =>  'post', 
-            'orderby'    => 'menu_order',
+            'orderby'    => 'ID',
             'sort_order' => 'ASC',
             'numberposts' => '-1'); 
             $postslist = get_posts( $args );    
@@ -218,7 +247,7 @@ get_header(); ?>
                     <?php
             $args = array( 'category_name' => 'vi', 
             'post_type' =>  'post', 
-            'orderby'    => 'menu_order',
+            'orderby'    => 'ID',
             'sort_order' => 'ASC',
             'numberposts' => '-1'); 
             $postslist = get_posts( $args );    
